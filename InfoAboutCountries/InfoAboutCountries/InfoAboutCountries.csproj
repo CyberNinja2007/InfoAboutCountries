@@ -12,4 +12,10 @@
       </Reference>
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Update="GreetingsForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+    </ItemGroup>
+
 </Project>
