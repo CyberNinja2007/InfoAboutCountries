@@ -148,7 +148,7 @@
             this.MinimumSize = new System.Drawing.Size(722, 429);
             this.Name = "ResultsForm";
             this.RightToLeftLayout = true;
-            this.Text = "Результаты";
+            this.Text = "CI";
             this.Load += new System.EventHandler(this.ResultsForm_Load);
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
