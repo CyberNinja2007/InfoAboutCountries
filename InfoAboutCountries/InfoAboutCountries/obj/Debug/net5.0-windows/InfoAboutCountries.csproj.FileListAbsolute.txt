@@ -14,5 +14,16 @@ F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCo
 F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\obj\Debug\net5.0-windows\ref\InfoAboutCountries.dll
 F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\obj\Debug\net5.0-windows\InfoAboutCountries.pdb
 F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\obj\Debug\net5.0-windows\InfoAboutCountries.genruntimeconfig.cache
-F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\obj\Debug\net5.0-windows\InfoAboutCountries.Form1.resources
 F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\obj\Debug\net5.0-windows\InfoAboutCountries.csproj.GenerateResource.cache
+F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\obj\Debug\net5.0-windows\InfoAboutCountries.GreetingsForm.resources
+F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\obj\Debug\net5.0-windows\InfoAboutCountries.ResultsForm.resources
+F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\bin\Debug\net5.0-windows\InfoAboutCountries.dll.config
+F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\obj\Debug\net5.0-windows\InfoAboutCountries.csproj.CopyComplete
+F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\obj\Debug\net5.0-windows\InfoAboutCountries.SearchForm.resources
+F:\Projects\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\InfoAboutCountries\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
