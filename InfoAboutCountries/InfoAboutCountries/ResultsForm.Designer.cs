@@ -41,7 +41,7 @@
             this.resultsLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.resultsLabel.AutoSize = true;
             this.resultsLabel.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.resultsLabel.Location = new System.Drawing.Point(38, 26);
+            this.resultsLabel.Location = new System.Drawing.Point(38, 15);
             this.resultsLabel.Name = "resultsLabel";
             this.resultsLabel.Size = new System.Drawing.Size(149, 29);
             this.resultsLabel.TabIndex = 0;
@@ -63,7 +63,7 @@
             // notAddToDBButton
             // 
             this.notAddToDBButton.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.notAddToDBButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.notAddToDBButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.notAddToDBButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.notAddToDBButton.Location = new System.Drawing.Point(428, 320);
             this.notAddToDBButton.Name = "notAddToDBButton";
@@ -75,11 +75,14 @@
             // 
             // resultsDataGridView
             // 
+            this.resultsDataGridView.AllowUserToAddRows = false;
+            this.resultsDataGridView.AllowUserToDeleteRows = false;
             this.resultsDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.resultsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.resultsDataGridView.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.resultsDataGridView.Location = new System.Drawing.Point(38, 77);
             this.resultsDataGridView.Name = "resultsDataGridView";
+            this.resultsDataGridView.ReadOnly = true;
             this.resultsDataGridView.Size = new System.Drawing.Size(630, 207);
             this.resultsDataGridView.TabIndex = 4;
             // 
@@ -89,6 +92,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(706, 390);
+            this.ControlBox = false;
             this.Controls.Add(this.resultsDataGridView);
             this.Controls.Add(this.notAddToDBButton);
             this.Controls.Add(this.addToDBButton);
@@ -100,7 +104,6 @@
             this.Name = "ResultsForm";
             this.RightToLeftLayout = true;
             this.Text = "CI";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ResultsForm_FormClosing);
             this.Load += new System.EventHandler(this.ResultsForm_Load);
             ((System.ComponentModel.ISupportInitialize) (this.resultsDataGridView)).EndInit();
             this.ResumeLayout(false);
