@@ -7,6 +7,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <HintPath>C:\Windows\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll</HintPath>
+      </Reference>
       <Reference Include="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
         <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
       </Reference>
@@ -16,6 +19,15 @@
       <Compile Update="GreetingsForm.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="SearchForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
     </ItemGroup>
 
 </Project>
