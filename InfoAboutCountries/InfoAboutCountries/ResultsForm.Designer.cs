@@ -29,108 +29,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ResultsLabel = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AddToDBButton = new System.Windows.Forms.Button();
-            this.NotAddButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
+            this.resultsLabel = new System.Windows.Forms.Label();
+            this.addToDBButton = new System.Windows.Forms.Button();
+            this.notAddToDBButton = new System.Windows.Forms.Button();
+            this.resultsDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize) (this.resultsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // ResultsLabel
+            // resultsLabel
             // 
-            this.ResultsLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ResultsLabel.AutoSize = true;
-            this.ResultsLabel.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.ResultsLabel.Location = new System.Drawing.Point(38, 26);
-            this.ResultsLabel.Name = "ResultsLabel";
-            this.ResultsLabel.Size = new System.Drawing.Size(149, 29);
-            this.ResultsLabel.TabIndex = 0;
-            this.ResultsLabel.Text = "Результаты";
+            this.resultsLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.resultsLabel.AutoSize = true;
+            this.resultsLabel.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.resultsLabel.Location = new System.Drawing.Point(38, 26);
+            this.resultsLabel.Name = "resultsLabel";
+            this.resultsLabel.Size = new System.Drawing.Size(149, 29);
+            this.resultsLabel.TabIndex = 0;
+            this.resultsLabel.Text = "Результаты";
             // 
-            // dataGridView1
+            // addToDBButton
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {this.Column1, this.Column2, this.Column3, this.Column4, this.Column5, this.Column6});
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 80);
-            this.dataGridView1.MaximumSize = new System.Drawing.Size(643, 220);
-            this.dataGridView1.MinimumSize = new System.Drawing.Size(643, 220);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(643, 220);
-            this.dataGridView1.TabIndex = 1;
+            this.addToDBButton.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.addToDBButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addToDBButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.addToDBButton.Location = new System.Drawing.Point(130, 320);
+            this.addToDBButton.Name = "addToDBButton";
+            this.addToDBButton.Size = new System.Drawing.Size(130, 38);
+            this.addToDBButton.TabIndex = 2;
+            this.addToDBButton.Text = "Добавить";
+            this.addToDBButton.UseVisualStyleBackColor = false;
+            this.addToDBButton.Click += new System.EventHandler(this.AddToDBButton_Click);
             // 
-            // Column1
+            // notAddToDBButton
             // 
-            this.Column1.HeaderText = "Название";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.notAddToDBButton.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.notAddToDBButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.notAddToDBButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.notAddToDBButton.Location = new System.Drawing.Point(428, 320);
+            this.notAddToDBButton.Name = "notAddToDBButton";
+            this.notAddToDBButton.Size = new System.Drawing.Size(130, 38);
+            this.notAddToDBButton.TabIndex = 3;
+            this.notAddToDBButton.Text = "Не добавлять";
+            this.notAddToDBButton.UseVisualStyleBackColor = false;
+            this.notAddToDBButton.Click += new System.EventHandler(this.NotAddButton_Click);
             // 
-            // Column2
+            // resultsDataGridView
             // 
-            this.Column2.HeaderText = "Код страны";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Столица";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Площадь";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Население";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Регион";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // AddToDBButton
-            // 
-            this.AddToDBButton.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.AddToDBButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddToDBButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.AddToDBButton.Location = new System.Drawing.Point(160, 340);
-            this.AddToDBButton.Name = "AddToDBButton";
-            this.AddToDBButton.Size = new System.Drawing.Size(130, 38);
-            this.AddToDBButton.TabIndex = 2;
-            this.AddToDBButton.Text = "Добавить";
-            this.AddToDBButton.UseVisualStyleBackColor = false;
-            this.AddToDBButton.Click += new System.EventHandler(this.AddToDBButton_Click);
-            // 
-            // NotAddButton
-            // 
-            this.NotAddButton.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.NotAddButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.NotAddButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.NotAddButton.Location = new System.Drawing.Point(398, 340);
-            this.NotAddButton.Name = "NotAddButton";
-            this.NotAddButton.Size = new System.Drawing.Size(130, 38);
-            this.NotAddButton.TabIndex = 3;
-            this.NotAddButton.Text = "Не добавлять";
-            this.NotAddButton.UseVisualStyleBackColor = false;
-            this.NotAddButton.Click += new System.EventHandler(this.NotAddButton_Click);
+            this.resultsDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.resultsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.resultsDataGridView.GridColor = System.Drawing.SystemColors.ButtonFace;
+            this.resultsDataGridView.Location = new System.Drawing.Point(38, 77);
+            this.resultsDataGridView.Name = "resultsDataGridView";
+            this.resultsDataGridView.Size = new System.Drawing.Size(630, 207);
+            this.resultsDataGridView.TabIndex = 4;
             // 
             // ResultsForm
             // 
@@ -138,10 +89,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(706, 390);
-            this.Controls.Add(this.NotAddButton);
-            this.Controls.Add(this.AddToDBButton);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.ResultsLabel);
+            this.Controls.Add(this.resultsDataGridView);
+            this.Controls.Add(this.notAddToDBButton);
+            this.Controls.Add(this.addToDBButton);
+            this.Controls.Add(this.resultsLabel);
             this.ForeColor = System.Drawing.SystemColors.MenuText;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(722, 429);
@@ -149,30 +100,19 @@
             this.Name = "ResultsForm";
             this.RightToLeftLayout = true;
             this.Text = "CI";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ResultsForm_FormClosing);
             this.Load += new System.EventHandler(this.ResultsForm_Load);
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.resultsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
 
-        private System.Windows.Forms.Button NotAddButton;
-        private System.Windows.Forms.Button AddToDBButton;
+        private System.Windows.Forms.Button addToDBButton;
+        private System.Windows.Forms.Button notAddToDBButton;
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label resultsLabel;
 
-        private System.Windows.Forms.Button button1;
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-
-        private System.Windows.Forms.Label ResultsLabel;
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView resultsDataGridView;
 
         #endregion
     }
