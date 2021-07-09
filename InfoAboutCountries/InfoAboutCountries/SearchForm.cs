@@ -13,7 +13,7 @@ namespace InfoAboutCountries
         
         private void searchText_TextChanged(object sender, EventArgs e)
         {
-            searchButton.Enabled = Regex.IsMatch(searchText.Text, @"^[A-Z][a-z]+$") ? true : false;
+            searchButton.Enabled = Regex.IsMatch(searchText.Text, @"^([A-Z]+[a-z]*\s*)*[a-z]$") ? true : false;
         }
 
         private void searchButton_Click(object sender, EventArgs e)
