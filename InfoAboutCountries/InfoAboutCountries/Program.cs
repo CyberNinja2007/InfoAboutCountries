@@ -14,7 +14,7 @@ namespace InfoAboutCountries
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ResultsForm());
+            Application.Run(new GreetingsForm());
         }
     }
 }
