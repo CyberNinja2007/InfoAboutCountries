@@ -12,12 +12,16 @@ namespace InfoAboutCountries
 
         private void SearchByNameButton_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            SearchForm searchForm = new SearchForm();
+            searchForm.Show();
+            Hide();
         }
 
         private void AllCountriesButton_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            ResultsForm resultsForm = new ResultsForm(new Loader());
+            resultsForm.Show();
+            Hide();
         }
     }
 }
