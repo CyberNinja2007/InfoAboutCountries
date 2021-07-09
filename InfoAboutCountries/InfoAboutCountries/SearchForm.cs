@@ -6,7 +6,7 @@ namespace InfoAboutCountries
 {
     public partial class SearchForm : Form
     {
-        public SearchForm(bool allInfo)
+        public SearchForm()
         {
             InitializeComponent();
         }
